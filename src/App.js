@@ -1,4 +1,5 @@
 import './App.css';
+import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import MovieList from './components/MovieList';
 import Header from './components/Header';
@@ -15,6 +16,8 @@ function App() {
     const url=`http://www.omdbapi.com/?s=${searchInput}&apikey=da88be3`
     const response = await fetch(url)
     const responseJson = await response.json()
+    
+    console.log(responseJson)
 
     if(responseJson.Search){
       setMovies(responseJson.Search)
@@ -22,9 +25,10 @@ function App() {
     }
 
 
-  useEffect(() =>{
-    getMovieRequest(searchInput)
-  },[searchInput])
+   
+    useEffect(() =>{
+      getMovieRequest(searchInput)
+    },[searchInput])
 
   const styles={
     searchContainer:{
