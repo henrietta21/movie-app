@@ -1,5 +1,4 @@
 import './App.css';
-import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import MovieList from './components/MovieList';
 import Header from './components/Header';
