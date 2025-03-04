@@ -1,0 +1,18 @@
+.bannerContainer {
+  height: 550px;
+  background-image: url("/public/images.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerText {
+  width: 490px;
+  height: 282px;
+  font-weight: Bold;
+  font-size: 72px;
+  line-height: 93.74px;
+  padding-top: 109px;
+  padding-left: 77px;
+  color: #fff;
+}

@@ -1,14 +1,23 @@
-body{
-  font-family: 'DM Sans', sans-serif;
+body {
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
 
-.movie-list{
+.movie-list {
   display: flex;
   flex-direction: row;
 }
 
-.movie-list > .row{
+.movie-list > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
+}
+
+.searchContainer {
+  padding: 63px 57px 48px 77px;
+  display: "block";
+}
+
+.movieContainer {
+  padding-left: 67px;
 }
